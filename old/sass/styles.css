@@ -1,0 +1,33 @@
+/*
+Error: Invalid CSS after "@import "compass"": expected selector or at-rule, was "@import url(htt..."
+        on line 3 of /Users/Tassos/Dropbox/Code/Tassos.net/styles.scss
+
+1: @import "compass"
+2:
+3: @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+4:
+5: $color1: #594F4F;
+6: $color2: #547980;
+7: $color3: #45ADA8;
+8: $color4: #9DE0AD;
+
+Backtrace:
+/Users/Tassos/Dropbox/Code/Tassos.net/styles.scss:3
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:43:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"@import \"compass\"\": expected selector or at-rule, was \"@import url(htt...\"\A         on line 3 of /Users/Tassos/Dropbox/Code/Tassos.net/sass/styles.scss\A \A 1: @import \"compass\"\A 2: \A 3: @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);\A 4: \A 5: $color1: #594F4F;\A 6: $color2: #547980;\A 7: $color3: #45ADA8;\A 8: $color4: #9DE0AD;"; }
