@@ -215,7 +215,11 @@ img { max-width: 100%; }
   transition: all 0.3s;
 }
 .logo-nav {
-  padding: 6px 0 10px 0;
+  /*font-family: 'Bubbler One', sans-serif;*/
+  font-family: 'Sirin Stencil', cursive;
+  font-size: 26pt;
+  color: #333;
+  padding: 0px 0 10px 0;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -223,7 +227,7 @@ img { max-width: 100%; }
   transition: all 0.3s;
   width: 400px;
   max-width: 400px;
-  display: inline;;
+  display: block;
 }
 .opacity-nav {
   opacity: 0.8;
@@ -632,7 +636,7 @@ ul.portfolio-image li img {
   height: 100%;
   left: 0;
   top: 0;
-  -webkit-filter: grayscale(100%);
+  /*-webkit-filter: grayscale(100%);*/
   transition: filter, transform, 0.5s;
 }
 ul.portfolio-image li .decription-wrap {
@@ -646,9 +650,9 @@ ul.portfolio-image li .decription-wrap {
   transition: background, 0.5s;
 }
 ul.portfolio-image li .image-bg {
-  color: #2f2f2f;
+  color: #444;
   background: #ffffff;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   text-transform: uppercase;
   width: 100%;
@@ -677,7 +681,7 @@ ul.portfolio-image li .desc{
   display: table-cell;
   right: 0;
   text-align: center;
-  color: #2f2f2f;
+  color: #444;
   font-size: 14px;
   font-weight: 700;
 }
