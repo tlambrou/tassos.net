@@ -90,11 +90,11 @@
 
     //typed js
     $(".typed").typed({
-        strings: ["my name is TASSOS", "I'm a iOS and web developer", "I love solving problems", "and making beautiful software"],
-        typeSpeed: 100,
-        backDelay: 900,
-        // loop
-        loop: true
+      strings: ["my name is TASSOS", "I'm a iOS and web developer", "I love solving problems", "and making beautiful software"],
+      typeSpeed: 100,
+      backDelay: 900,
+      // loop
+      loop: true
     });
 
     //owl carousel
@@ -132,17 +132,41 @@
 
       // check if the input has any value (if we've typed into it)
       if ($(this).val())
-        $(this).addClass('used');
+      $(this).addClass('used');
       else
-        $(this).removeClass('used');
+      $(this).removeClass('used');
     });
 
     //pop up porfolio
-    $('.portfolio-image li a').magnificPopup({
+    // $('.portfolio-image li a').magnificPopup({
+
+    $('.zoom-gallery').magnificPopup({
+      delegate: 'a',
       type: 'image',
+      closeOnContentClick: false,
+      closeBtnInside: false,
+      mainClass: 'mfp-with-zoom mfp-img-mobile',
+      image: {
+        verticalFit: true,
+        titleSrc: function(item) {
+          return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">Project Link</a>';
+        }
+      },
       gallery: {
         enabled: true
+      },
+      zoom: {
+        enabled: true,
+        duration: 300, // don't foget to change the duration also in CSS
+        opener: function(element) {
+          return element.find('img');
+        }
       }
+
+      // type: 'image',
+      // gallery: {
+      //   enabled: true
+      // }
       // other options
     });
 
@@ -158,24 +182,26 @@
     });
 
 
+
+
   });
 
 
   //header
   function inits() {
     window.addEventListener('scroll', function(e){
-        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 300,
-            header = document.querySelector(".for-sticky");
-        if (distanceY > shrinkOn) {
-            classie.add(header,"opacity-nav");
-        } else {
-            if (classie.has(header,"opacity-nav")) {
-                classie.remove(header,"opacity-nav");
-            }
-          }
-      });
-    }
+      var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+      shrinkOn = 300,
+      header = document.querySelector(".for-sticky");
+      if (distanceY > shrinkOn) {
+        classie.add(header,"opacity-nav");
+      } else {
+        if (classie.has(header,"opacity-nav")) {
+          classie.remove(header,"opacity-nav");
+        }
+      }
+    });
+  }
 
   window.onload = inits();
 

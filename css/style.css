@@ -216,7 +216,7 @@ img { max-width: 100%; }
 }
 .logo-nav {
   /*font-family: 'Bubbler One', sans-serif;*/
-  font-family: 'Sirin Stencil', cursive;
+  font-family: 'Philosopher', cursive;
   font-size: 26pt;
   color: #333;
   padding: 0px 0 10px 0;
@@ -1192,11 +1192,26 @@ ul.portfolio-image li .desc{
 .facebook a:after{
   background-color: #527bbb;
 }
+
+.linkedin{
+  background: #969696;
+  /*padding: 20px 0;*/
+}
+.linkedin a:after{
+  background-color: #0060A9;
+}
+
 .twitter{
   background: #ABABAB;
 }
 .twitter a:after{
   background-color: #77ccf1;
+}
+.github{
+  background: #ABABAB;
+}
+.github a:after{
+  background-color: #000;
 }
 .gplus{
   background: #d8d8d8;
