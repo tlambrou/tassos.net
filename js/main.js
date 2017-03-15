@@ -26,9 +26,8 @@
         $(this).removeClass('active');
       })
       $(this).addClass('active');
-
       var target = this.hash;
-      $target = $(target);
+      var $target = $(target);
       $('html, body').stop().animate({
         'scrollTop': $target.offset().top+2
       }, 500, 'swing', function () {
@@ -91,7 +90,7 @@
     //typed js
     $(".typed").typed({
       strings: ["my name is TASSOS", "I'm a iOS and web developer", "I love solving problems", "and making beautiful software"],
-      typeSpeed: 100,
+      typeSpeed: 120,
       backDelay: 900,
       // loop
       loop: true

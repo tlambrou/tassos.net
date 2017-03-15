@@ -636,7 +636,7 @@ ul.portfolio-image li img {
   height: 100%;
   left: 0;
   top: 0;
-  /*-webkit-filter: grayscale(100%);*/
+  -webkit-filter: grayscale(0%);
   transition: filter, transform, 0.5s;
 }
 ul.portfolio-image li .decription-wrap {
@@ -645,7 +645,7 @@ ul.portfolio-image li .decription-wrap {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(242, 242, 242, 0.4);
+  /*background: rgba(242, 242, 242, 0.4);*/
   padding: 20px;
   transition: background, 0.5s;
 }
@@ -682,7 +682,7 @@ ul.portfolio-image li .desc{
   right: 0;
   text-align: center;
   color: #444;
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 700;
 }
 
